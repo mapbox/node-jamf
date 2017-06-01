@@ -1,4 +1,4 @@
-var getRoutes = require('../lib/getRoutes.js');
+var jamfApi = require('../lib/api.js');
 
 var options = {
   user: process.env.JAMF_API_USER,
@@ -7,7 +7,7 @@ var options = {
   json: true
 }
 
-getRoutes.getAccounts(options, function (err, response){
+jamfApi.getAccounts(options, function (err, response){
   if (err) console.log(err);
   console.log(response);
 });
