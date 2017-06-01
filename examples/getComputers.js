@@ -7,4 +7,7 @@ var options = {
   json: true
 }
 
-getRoutes.getComputers(options);
+getRoutes.getComputers(options, function (err, response){
+  if (err) console.log(err);
+  console.log(response);
+});
