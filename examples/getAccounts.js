@@ -7,4 +7,4 @@ var options = {
   json: true
 }
 
-getRoutes.getComputers(options);
+getRoutes.getAccounts(options);
