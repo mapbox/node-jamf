@@ -11,3 +11,8 @@ jamfApi.getComputers(config, function (err, response){
   if (err) console.log(err);
   console.log(response);
 });
+
+jamfApi.getComputerById(config, 32, function (err, response){
+  if (err) console.log(err);
+  console.log(response);
+});
