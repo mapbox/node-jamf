@@ -12,7 +12,7 @@ jamfApi.getComputers(config, function (err, response){
   console.log(response);
 });
 
-jamfApi.getComputerById(config, 32, function (err, response){
+jamfApi.getComputerById(config, {id: 32}, function (err, response){
   if (err) console.log(err);
   console.log(response);
 });
