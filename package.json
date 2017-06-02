@@ -4,11 +4,16 @@
   "description": "A Node.js wrapper for the Jamf API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint -c .eslintrc.js *.js && tape test/*.test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "nock": "^9.0.13",
+    "tape": "^4.6.3"
   }
 }
