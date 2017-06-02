@@ -10,11 +10,16 @@ var config = {
 var jamf = new JamfApiClient(config);
 
 jamf.get('/accounts', function (err, res){
-	if (err) console.log(err)
-	console.log(res)
+  if (err) console.log(err)
+  console.log(res)
 });
 
 jamf.get('/computers/id/32', function (err, res){
-	if (err) console.log(err)
-	console.log(res)
+  if (err) console.log(err)
+  console.log(res)
+});
+
+jamf.get('/osxconfigurationprofiles/id/3/subset/Scopes', function (err, res){
+  if (err) console.log(err)
+  console.log(res)
 });
