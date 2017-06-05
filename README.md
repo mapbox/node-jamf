@@ -14,7 +14,7 @@ Then run `npm install`
 
 ## Usage
 
-The following code sets up the module and configures the API client with values from
+The following code sets up the module and configures the API client with values from your local environment:
 
 ```js
 var JamfApiClient = require('node-jamf');
