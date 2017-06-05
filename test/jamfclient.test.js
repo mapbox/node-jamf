@@ -64,3 +64,23 @@ tape('Jamf API request to get computers in XML format', function(assert){
   assert.end();
 
 });
+
+tape('Incorrect Jamf API request', function(assert){
+
+  nock('https://abc123.jamfcloud.com')
+    .get('/JSSResource/com123puters')
+    .reply(404);
+
+  var jamf = new JamfApiClient(jsonConfig);
+
+  /* we should be testing for '404 Not Found' but there is a bug with response.statusMessage
+  and the Nock module, see https://github.com/node-nock/nock/issues/469
+  */
+
+  jamf.get('/com123puters', function (err, res){
+    assert.deepLooseEqual(err, new Error('404 null'), 'Function errors with 404 Not Found');
+  });
+
+  assert.end();
+
+});
