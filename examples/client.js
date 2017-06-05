@@ -1,4 +1,4 @@
-var JamfApiClient = require('../lib/jamfclient.js');
+var JamfApiClient = require('node-jamf');
 
 var config = {
   user: process.env.JAMF_API_USER,
