@@ -26,6 +26,57 @@ tape('Jamf API client fails if config is not provided', function(assert){
   assert.end();
 });
 
+tape('Jamf API client fails if username is missing', function(assert){
+  assert.throws(function() { new JamfApiClient({
+      password: 'fakepassword',
+      jamfUrl: 'https://abc123.jamfcloud.com',
+      format: 'json'
+    });
+  });
+  assert.end();
+});
+
+tape('Jamf API client fails if password is missing', function(assert){
+  assert.throws(function() { new JamfApiClient({
+      user: 'fakeuser',
+      jamfUrl: 'https://abc123.jamfcloud.com',
+      format: 'json'
+    }); 
+  });
+  assert.end();
+});
+
+tape('Jamf API client fails if Jamf URL is missing', function(assert){
+  assert.throws(function() { new JamfApiClient({
+      user: 'fakeuser',
+      password: 'fakepassword',
+      format: 'json'
+    }); 
+  });
+  assert.end();
+});
+
+tape('Jamf API client fails if format is missing', function(assert){
+  assert.throws(function() { new JamfApiClient({
+      user: 'fakeuser',
+      password: 'fakepassword',
+      jamfUrl: 'https://abc123.jamfcloud.com'
+    }); 
+  });
+  assert.end();
+});
+
+tape('Jamf API client fails if format is incorrect', function(assert){
+  assert.throws(function() { new JamfApiClient({
+      user: 'fakeuser',
+      password: 'fakepassword',
+      jamfUrl: 'https://abc123.jamfcloud.com',
+      format: 'foobar'
+    }); 
+  });
+  assert.end();
+});
+
 tape('Jamf API client configuration success', function(assert){
   assert.doesNotThrow(function() { new JamfApiClient(jsonConfig) });
   assert.end();
