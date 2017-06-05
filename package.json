@@ -2,7 +2,7 @@
   "name": "node-jamf",
   "version": "1.0.0",
   "description": "A Node.js wrapper for the Jamf API",
-  "main": "lib",
+  "main": "lib/jamfclient.js",
   "scripts": {
     "test": "eslint -c .eslintrc.js *.js && tape test/*.test.js"
   },
