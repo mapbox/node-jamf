@@ -1,6 +1,12 @@
 # node-jamf
 
-A lightweight Node.js wrapper for the Jamf API.
+A lightweight Node.js wrapper for Jamf Pro's JSS REST API.
+
+## Scope
+
+Currently this module only supports `GET` requests for the JSS REST API. [Support for other methods such as `PUT`, `POST`, and `DELETE` will be added later](https://github.com/mapbox/node-jamf/issues/6).
+
+[Support for the JSS Universal API](https://github.com/mapbox/node-jamf/issues/5) may also be added later.
 
 ## Installation
 
@@ -72,6 +78,30 @@ var config = {
 
 var jamf = new JamfApiClient(config);
 ```
+
+## Tests
+
+To run the tests for this project:
+
+```js
+npm test
+```
+
+The tests use [eslint](http://eslint.org/) for linting and [tape](https://github.com/substack/tape) for tests.
+
+## Feature requests and reporting bugs
+
+Are we missing something in this module? Did you find a bug?
+
+Please look through the [list of issues](https://github.com/mapbox/node-jamf/issues?utf8=%E2%9C%93&q=is%3Aissue) (both open and closed) and see if an issue already exists for what you want to propose or report.
+
+Don't see anything in the issues? Please [create a new one](https://github.com/mapbox/node-jamf/issues/new)!
+
+## Contributing
+
+Contributors are welcome! If you want to contribute, please fork this repo then submit a pull request (PR).
+
+All of your tests should pass both locally and in Travis before we'll accept your PR. We also request that you add additional test coverage and documentation updates in your PR where applicable.
 
 ## Resources
 
