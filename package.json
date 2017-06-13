@@ -1,13 +1,14 @@
 {
   "name": "node-jamf",
   "version": "1.0.0",
-  "description": "A Node.js wrapper for the Jamf API",
+  "description": "A Node.js wrapper for the JSS REST API",
   "main": "lib/jamfclient.js",
   "scripts": {
     "test": "eslint -c .eslintrc.js *.js && tape test/*.test.js"
   },
   "author": "Mapbox",
   "license": "BSD-2-Clause",
+  "keywords": "Jamf, Jamf API, JSS, JSS API, JSS REST API, IT, Information Technology, Mac, Macintosh, MacOS, OS X, Apple, MDM, security",
   "repository": {
     "type": "git",
     "url": "git://github.com/mapbox/node-jamf.git"
