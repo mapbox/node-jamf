@@ -8,22 +8,16 @@ Currently this module only supports `GET` requests for the JSS REST API. [Suppor
 
 [Support for the JSS Universal API](https://github.com/mapbox/node-jamf/issues/5) may also be added later.
 
-## Installation
+## Installation 
 
-Add the following line to the `dependencies` section of your `package.json`:
-
-```js
-  "node-jamf": "mapbox/node-jamf"
-```
-
-Then run `npm install`
+`npm install jamf`
 
 ## Usage
 
 The following code sets up the module and configures the API client with values from your local environment:
 
 ```js
-var JamfApiClient = require('node-jamf');
+var JamfApiClient = require('jamf');
 
 var config = {
   user: process.env.JAMF_API_USER,
