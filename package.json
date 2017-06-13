@@ -1,5 +1,5 @@
 {
-  "name": "node-jamf",
+  "name": "jamf",
   "version": "1.0.0",
   "description": "A Node.js wrapper for the JSS REST API",
   "main": "lib/jamfclient.js",
