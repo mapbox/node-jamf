@@ -8,7 +8,13 @@
   },
   "author": "Mapbox",
   "license": "BSD-2-Clause",
-  "keywords": "Jamf, Jamf API, JSS, JSS API, JSS REST API, IT, Information Technology, Mac, Macintosh, MacOS, OS X, Apple, MDM, security",
+  "keywords": [
+    "jamf",
+    "JSS",
+    "MDM",
+    "Mac",
+    "Macintosh"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/mapbox/node-jamf.git"
