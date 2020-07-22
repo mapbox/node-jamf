@@ -6,18 +6,21 @@
   "scripts": {
     "test": "eslint -c .eslintrc.js *.js && tape test/*.test.js"
   },
-  "author": "Mapbox",
+  "author": "@alulsh",
   "license": "BSD-2-Clause",
   "keywords": [
     "jamf",
     "JSS",
     "MDM",
     "Mac",
-    "Macintosh"
+    "Macintosh",
+    "Apple",
+    "iOS",
+    "macOS"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mapbox/node-jamf.git"
+    "url": "git://github.com/mapbox/jamf-sdk-node.git"
   },
   "dependencies": {
     "lodash": "^4.17.4",
